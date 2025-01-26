@@ -1,13 +1,13 @@
 CFLAGS=-Wall -g
-CC=clang
+CC=gcc
 SRC_DIR=src
 BUILD_DIR=build
 
 # Default target
-all: $(BUILD_DIR)/ex7
+all: $(BUILD_DIR)/ex15
 
 # Rule to build the binary in the build directory
-$(BUILD_DIR)/ex7: $(SRC_DIR)/ex7.c | $(BUILD_DIR)
+$(BUILD_DIR)/ex15: $(SRC_DIR)/ex15.c | $(BUILD_DIR)
 	$(CC) $(CFLAGS) -o $@ $<
 
 # Rule to create the build directory if it doesn't exist
