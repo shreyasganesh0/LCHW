@@ -48,7 +48,7 @@ void printfunc(int *ages, char **names){
     
     
     for (int i = 0; i < 4;i++){
-        printf("%s is %d years in func.\n", names[i], ages[i]);
+        printf("%s is %d years in func with address of names %p.\n ", names[i], ages[i], names);
     }
 
     return;
