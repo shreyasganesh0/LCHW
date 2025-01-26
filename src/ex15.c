@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void printfunc(int *, char **);
+
 int main(int argc, char *argv[]){
 
     int ages[] = {23, 14, 23, 0};
@@ -36,6 +38,19 @@ int main(int argc, char *argv[]){
         printf("%s is %d years now.\n", *cur_name, *cur_age);
     }
 
+    printfunc(ages, names);
+
     return 0;
+}
+
+void printfunc(int *ages, char **names){
+
+    
+    
+    for (int i = 0; i < 4;i++){
+        printf("%s is %d years in func.\n", names[i], ages[i]);
+    }
+
+    return;
 }
 
